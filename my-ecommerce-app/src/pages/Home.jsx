@@ -1,7 +1,7 @@
 import React from 'react';
 import ProductList from '../components/ProductList';
 
-const Home: React.FC = () => {
+const Home = () => {
     return (
         <div>
             <h1>Welcome to Our E-commerce Store</h1>

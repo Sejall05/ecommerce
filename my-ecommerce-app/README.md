@@ -1,13 +1,6 @@
 # My E-commerce App
 
-This is a simple e-commerce application built with React and TypeScript. The application allows users to browse products, add them to a shopping cart, and proceed to checkout.
-
-## Features
-
-- View a list of products
-- Add products to the shopping cart
-- View and manage items in the shopping cart
-- Checkout process to complete purchases
+This is a simple e-commerce application built with React. It allows users to browse products, add them to a shopping cart, and proceed to checkout.
 
 ## Project Structure
 
@@ -16,51 +9,65 @@ my-ecommerce-app
 ├── public
 │   └── index.html          # Main HTML file
 ├── src
-│   ├── components          # Reusable components
-│   │   ├── Cart.tsx       # Shopping cart component
-│   │   ├── ProductList.tsx # Component to list products
-│   │   └── ProductItem.tsx # Component for individual product
-│   ├── pages               # Application pages
-│   │   ├── Home.tsx       # Landing page
-│   │   └── Checkout.tsx    # Checkout page
-│   ├── App.tsx            # Main application component
-│   ├── index.tsx          # Entry point of the application
-│   └── types               # TypeScript types
-│       └── index.ts       # Type definitions
-├── package.json            # NPM configuration
-├── tsconfig.json           # TypeScript configuration
+│   ├── components          # Contains all React components
+│   │   ├── Cart.jsx       # Cart component for displaying items in the cart
+│   │   ├── ProductList.jsx # Component for listing available products
+│   │   └── ProductItem.jsx # Component for individual product details
+│   ├── hooks               # Custom hooks
+│   │   └── useCart.js      # Hook for managing cart state
+│   ├── pages               # Contains page components
+│   │   ├── Home.jsx       # Landing page component
+│   │   └── Checkout.jsx    # Checkout page component
+│   ├── types               # Type definitions
+│   │   └── index.js        # Exports types and interfaces
+│   ├── App.jsx             # Main application component
+│   └── index.js            # Entry point for the React application
+├── package.json            # NPM configuration file
 └── README.md               # Project documentation
 ```
 
 ## Getting Started
 
-To get started with the project, follow these steps:
+To get a local copy up and running, follow these steps:
 
-1. Clone the repository:
-   ```
-   git clone <repository-url>
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/my-ecommerce-app.git
    ```
 
-2. Navigate to the project directory:
-   ```
+2. **Navigate to the project directory**
+   ```bash
    cd my-ecommerce-app
    ```
 
-3. Install the dependencies:
-   ```
+3. **Install dependencies**
+   ```bash
    npm install
    ```
 
-4. Start the development server:
-   ```
+4. **Start the development server**
+   ```bash
    npm start
    ```
 
-5. Open your browser and go to `http://localhost:3000` to view the application.
+## Features
 
-## Contributing
+- View a list of products
+- Add products to the shopping cart
+- Remove items from the cart
+- View total price in the cart
+- Proceed to checkout
 
-Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
+## Technologies Used
+
+- React
+- JavaScript
+- CSS
+- HTML
+
+## Author
+
+Your Name
 
 ## License
 
